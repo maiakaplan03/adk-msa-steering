@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "created": "2026-05-13",
+  "description": "Baseline reference for the v2_phase1 (modifier_v2) sweep. Contains AF2 predictions of the UNMODIFIED MSA, run with the same Colab pipeline that will score Phase-1. Use these stats as the null distribution for (column \u00d7 theory \u00d7 direction \u00d7 dose) cells in analyze_v2.py.",
+  "source": {
+    "csv_path": "nuevos_MSA/fuente_MSA_original/results/batch_results_original_MSA_control/interactive_data_backup.csv",
+    "csv_relpath": "../../fuente_MSA_original/results/batch_results_original_MSA_control/interactive_data_backup.csv",
+    "structures_dir": "nuevos_MSA/fuente_MSA_original/results/batch_results_original_MSA_control/all_structures",
+    "n_predictions_csv": 314,
+    "n_structures_dir": 314,
+    "csv_sha256": "13e48229ba8c63a578092b124bcc01a0cc1bbe9f4974d080c3412ecf66d9f734"
+  },
+  "classification": {
+    "function_source": "analysis_outputs/01_param_sweep.py:82",
+    "hi": 0.85,
+    "lo": 0.75,
+    "rule": "closed: TM_C>=hi & TM_O<lo  |  open: TM_O>=hi & TM_C<lo  |  both: TM_C>=hi & TM_O>=hi  |  else: intermediate",
+    "mix_counts": {
+      "intermediate": 215,
+      "open": 88,
+      "closed": 11,
+      "both": 0
+    },
+    "mix_percent": {
+      "intermediate": 68.47,
+      "open": 28.03,
+      "closed": 3.5,
+      "both": 0.0
+    }
+  },
+  "metrics": {
+    "TM_Closed": {
+      "n": 314,
+      "mean": 0.807934,
+      "sd": 0.064711,
+      "se": 0.003652,
+      "min": 0.69712,
+      "p2.5": 0.709804,
+      "p25": 0.746522,
+      "median": 0.82435,
+      "p75": 0.865023,
+      "p97.5": 0.923118,
+      "max": 0.97735
+    },
+    "TM_Open": {
+      "n": 314,
+      "mean": 0.834956,
+      "sd": 0.056236,
+      "se": 0.003174,
+      "min": 0.65992,
+      "p2.5": 0.709886,
+      "p25": 0.79689,
+      "median": 0.815025,
+      "p75": 0.881978,
+      "p97.5": 0.929217,
+      "max": 0.95006
+    },
+    "NMP_Angle": {
+      "n": 314,
+      "mean": 70.050326,
+      "sd": 5.137373,
+      "se": 0.289919,
+      "min": 42.224155,
+      "p2.5": 54.561705,
+      "p25": 68.634216,
+      "median": 70.68428,
+      "p75": 73.015385,
+      "p97.5": 76.067372,
+      "max": 79.6855
+    },
+    "LID_Angle": {
+      "n": 314,
+      "mean": 119.06374,
+      "sd": 17.063175,
+      "se": 0.962931,
+      "min": 98.77287,
+      "p2.5": 99.951567,
+      "p25": 102.815285,
+      "median": 107.46356,
+      "p75": 135.882313,
+      "p97.5": 144.966194,
+      "max": 151.84534
+    },
+    "dTM": {
+      "n": 314,
+      "mean": 0.027021,
+      "sd": 0.119644,
+      "se": 0.006752,
+      "min": -0.29804,
+      "p2.5": -0.21467,
+      "p25": -0.068203,
+      "median": -0.00481,
+      "p75": 0.136572,
+      "p97.5": 0.214777,
+      "max": 0.24467,
+      "definition": "TM_Open - TM_Closed  (positive = open-like; see 01_param_sweep.py:71)"
+    }
+  },
+  "comparison_notes": {
+    "phase1_seeds_per_cell": 5,
+    "phase1_n_cells": 152,
+    "expected_total_phase1_predictions": 760,
+    "se_baseline_vs_se_cell": {
+      "TM_Closed": {
+        "baseline_SE": 0.003652,
+        "cell_SE@5seeds": 0.02894
+      },
+      "TM_Open": {
+        "baseline_SE": 0.003174,
+        "cell_SE@5seeds": 0.02515
+      },
+      "NMP_Angle": {
+        "baseline_SE": 0.289919,
+        "cell_SE@5seeds": 2.297503
+      },
+      "LID_Angle": {
+        "baseline_SE": 0.962931,
+        "cell_SE@5seeds": 7.630884
+      }
+    },
+    "interpretation": "Cell-level SE (5 seeds) is ~8x larger than baseline SE \u2014 so the baseline is effectively a fixed reference point for every (col, theory, dir, dose) cell."
+  }
+}

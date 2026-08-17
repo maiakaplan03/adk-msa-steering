@@ -1,0 +1,11 @@
+chain,resi,resn,degree_A,degree_B,delta_degree_B_minus_A,gained_count,lost_count,gained_partners,lost_partners,gained_partners_preview
+A,67,LEU,5,9,4,4,0,"A:38(ALA), A:46(GLY), A:49(ALA), A:63(LEU)",,"A:38(ALA), A:46(GLY), A:49(ALA), A:63(LEU)"
+A,101,ILE,4,8,4,4,0,"A:65(ILE), A:68(VAL), A:69(LYS), A:97(LYS)",,"A:65(ILE), A:68(VAL), A:69(LYS), A:97(LYS)"
+A,168,LEU,6,9,3,3,0,"A:117(VAL), A:164(VAL), A:172(HIS)",,"A:117(VAL), A:164(VAL), A:172(HIS)"
+A,65,ILE,7,10,3,3,0,"A:96(MET), A:99(ALA), A:101(ILE)",,"A:96(MET), A:99(ALA), A:101(ILE)"
+A,3,ILE,7,9,2,2,0,"A:24(TYR), A:81(PHE)",,"A:24(TYR), A:81(PHE)"
+A,38,ALA,4,6,2,2,0,"A:49(ALA), A:67(LEU)",,"A:49(ALA), A:67(LEU)"
+A,96,MET,9,11,2,2,0,"A:65(ILE), A:68(VAL)",,"A:65(ILE), A:68(VAL)"
+A,155,THR,2,4,2,2,0,"A:123(ARG), A:159(ASP)",,"A:123(ARG), A:159(ASP)"
+A,121,VAL,4,6,2,2,0,"A:159(ASP), A:164(VAL)",,"A:159(ASP), A:164(VAL)"
+A,146,ASP,6,8,2,2,0,"A:140(PRO), A:152(GLU)",,"A:140(PRO), A:152(GLU)"

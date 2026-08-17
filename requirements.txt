@@ -1,0 +1,14 @@
+# Core — needed for the editor, scoring and figures
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+
+# Phase-0 analysis and structural utilities
+scipy>=1.11
+gemmi>=0.6          # mmCIF parsing in the contact pipeline
+mdtraj>=1.9         # domain angle analysis
+plotly>=5.18        # interactive angle / TM-score plots
+
+# Structure prediction itself is external:
+#   boltz==2.2.1     (GPU; see https://github.com/jwohlwend/boltz)
+# src/modifier_v2.py and src/generate_phase1_sweep.py need numpy only.

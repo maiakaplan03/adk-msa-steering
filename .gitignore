@@ -1,0 +1,23 @@
+# fetched inputs (see data/fetch_inputs.sh)
+data/AFF2024/
+
+# regenerated alignments — deterministic, rebuild with generate_phase1_sweep.py
+data/outputs_msas/
+*.a3m
+
+# predicted structures — GPU output, not distributed
+data/boltz_results/
+*.cif
+
+# large interactive plots
+*.html
+
+# personal notes, not part of the repo
+INTERVIEW_PREP.md
+HANDOFF*.md
+
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.venv/
