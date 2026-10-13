@@ -72,10 +72,12 @@ from modifier_v2 import (
 # ---------------------------------------------------------------------------
 # Default paths — the canonical AdK inputs
 # ---------------------------------------------------------------------------
-REPO_ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-DEFAULT_ORIGINAL  = os.path.join(REPO_ROOT, "repo-folder", "AdK", "Frustration-Energy-space", "MSA.a3m")
-DEFAULT_CLOSED500 = os.path.join(REPO_ROOT, "repo-folder", "AdK", "AdK-mixing", "Closed500.a3m")
-DEFAULT_OPEN100   = os.path.join(REPO_ROOT, "repo-folder", "AdK", "AdK-mixing", "Open100.a3m")
+# Inputs fetched by data/fetch_inputs.sh (Guan et al. 2024, AFF2024 repository).
+REPO_ROOT = os.path.abspath(os.path.join(HERE, ".."))
+AFF_ADK = os.path.join(REPO_ROOT, "data", "AFF2024", "AdK")
+DEFAULT_ORIGINAL  = os.path.join(AFF_ADK, "Frustration-Energy-space", "MSA.a3m")
+DEFAULT_CLOSED500 = os.path.join(AFF_ADK, "AdK-mixing", "Closed500.a3m")
+DEFAULT_OPEN100   = os.path.join(AFF_ADK, "AdK-mixing", "Open100.a3m")
 
 OUTPUT_ROOT = os.path.join(HERE, "outputs_msas")
 MANIFEST_PATH = os.path.join(HERE, "manifest.csv")

@@ -67,6 +67,6 @@ is the correct lever to pull. The framing is reinforced, not undermined.
   separates runs by subsample summary statistics.
 - **Reproducibility going forward.** Batches launched without an explicit `--seed` were
   entropy-seeded: diverse, but not reproducible. Pass a seed per run.
-  `analysis/check_seed_determinism.sh` distinguishes the three candidate sources of
+  `evaluation/check_seed_determinism.sh` distinguishes the three candidate sources of
   run-to-run variation (unfixed seed, RNG advancing within one process, and genuine
   GPU/bf16 nondeterminism across processes).

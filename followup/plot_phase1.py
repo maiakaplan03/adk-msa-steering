@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-ANA  = str(REPO / "results" / "phase1")
+ANA  = str(REPO / "followup" / "results")
 
 df    = pd.read_csv(f"{ANA}/per_structure_metrics.csv")
 cells = pd.read_csv(f"{ANA}/per_cell_stats.csv")
@@ -150,7 +150,7 @@ print("wrote fig_seed_dominance.png")
 # ---------------------------------------------------------------------------
 fig, ax = plt.subplots(figsize=(9, 7))
 # Baseline: load the raw CSV
-base_csv = str(REPO / "results" / "phase0" / "baseline_control_314.csv")
+base_csv = str(REPO / "results" / "sweep_evaluation" / "baseline_control_314.csv")
 try:
     bdf = pd.read_csv(base_csv)
     ax.scatter(bdf["NMP_Angle"], bdf["LID_Angle"], s=12, alpha=0.35,

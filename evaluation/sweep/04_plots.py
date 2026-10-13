@@ -15,7 +15,7 @@ INPUTS = _Path(_os.environ.get("ADK_INPUTS", REPO / "data" / "AFF2024"))
 # -------------------------------------------------------------------------
 
 
-OUT  = str(REPO / "results" / "phase0")
+OUT  = str(REPO / "results" / "sweep_evaluation")
 M    = np.load(os.path.join(OUT,"col_edit_matrix.npy"))
 diff = pd.read_csv(os.path.join(OUT,"msa_diff_summary.csv"))
 pred = pd.read_csv(os.path.join(OUT,"all_predictions_merged.csv"))

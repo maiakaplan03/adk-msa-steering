@@ -28,7 +28,7 @@ INPUTS = Path(os.environ.get("ADK_INPUTS", REPO / "data" / "AFF2024"))
 BOLTZ  = os.environ.get("ADK_STRUCTURES", str(REPO / "data" / "boltz_results"))
 REF_CLOSED = f"{INPUTS}/AdK/Frustration-Energy-space/closedCA.pdb"
 REF_OPEN   = f"{INPUTS}/AdK/Frustration-Energy-space/openCA.pdb"
-OUT_CSV    = str(REPO / "results" / "phase1" / "per_structure_metrics.csv")
+OUT_CSV    = str(REPO / "followup" / "results" / "per_structure_metrics.csv")
 
 FNAME_RE = re.compile(
     r"v2__col-(\d+)__theory-([ABC])__dir-(closed|open)__dose-(\d+)_seed(\d+)\.cif"

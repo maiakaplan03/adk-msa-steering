@@ -89,7 +89,7 @@ def greedy_forward(X, y, max_features=15):
         chosen_path.append((step+1, best_i, cum_r2_train, cv_r2_val))
     return selected, chosen_path
 
-OUT  = str(REPO / "results" / "phase0")
+OUT  = str(REPO / "results" / "sweep_evaluation")
 M    = np.load(os.path.join(OUT,"col_edit_matrix.npy"))      # (1296, 214)
 diff = pd.read_csv(os.path.join(OUT,"msa_diff_summary.csv"))
 pred = pd.read_csv(os.path.join(OUT,"all_predictions_merged.csv"))

@@ -1,8 +1,14 @@
 # fetched inputs (see data/fetch_inputs.sh)
 data/AFF2024/
 
-# regenerated alignments — deterministic, rebuild with generate_phase1_sweep.py
+# regenerated alignments — deterministic, rebuild with pipeline/04_generate_sweep.py
+# (ensembles) and followup/generate_phase1_sweep.py (follow-up)
+data/sweep_msas/
 data/outputs_msas/
+followup/outputs_msas/
+followup/manifest.csv
+*__runs/
+demo_B_multiseed/
 *.a3m
 
 # predicted structures — GPU output, not distributed

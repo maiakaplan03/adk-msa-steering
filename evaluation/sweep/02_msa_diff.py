@@ -20,7 +20,7 @@ INPUTS = _Path(_os.environ.get("ADK_INPUTS", REPO / "data" / "AFF2024"))
 
 ROOT  = str(RUNS.parent)
 ORIG  = str(INPUTS / "AdK" / "Frustration-Energy-space" / "MSA.a3m")
-OUT   = str(REPO / "results" / "phase0")
+OUT   = str(REPO / "results" / "sweep_evaluation")
 
 ENS = [
     "all_runs_a3m_A_minus_B",

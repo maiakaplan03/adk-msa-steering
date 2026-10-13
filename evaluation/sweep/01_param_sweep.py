@@ -30,7 +30,7 @@ INPUTS = _Path(_os.environ.get("ADK_INPUTS", REPO / "data" / "AFF2024"))
 
 # --- paths ---
 RES_ROOT = str(RUNS)
-OUT_DIR  = str(REPO / "results" / "phase0")
+OUT_DIR  = str(REPO / "results" / "sweep_evaluation")
 os.makedirs(OUT_DIR, exist_ok=True)
 
 ENSEMBLES = [
